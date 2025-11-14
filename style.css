@@ -1,0 +1,178 @@
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* INTRODUCTION */
+
+.paperboard-texture{
+    position: fixed;    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;        
+    z-index: -1;              
+    pointer-events: none; 
+    opacity: 60%;
+}
+
+.background-video {
+    position: fixed;    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;        
+    z-index: -1;              
+    pointer-events: none; 
+    opacity: 60%;   
+}
+
+
+.hero-container{
+    position: relative;
+}
+
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+     background: transparent;
+}
+
+#text-1{
+    width: 80%;
+    color: white;
+    text-align: center;
+    font-size: 4vh;
+    opacity: 0;
+    transition: opacity 0.5s;
+    font-family: "matt-b", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#text-1.visible{
+    opacity: 100;
+}
+
+#directory{
+    position: absolute;
+    align-self: flex-end;
+    color: white;
+    text-align: center;
+    font-size: 3vh;
+    opacity: 0;
+    transition: opacity 0.5s;
+    font-family: "matt-b", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+
+#directory.visible{
+    opacity: 100;
+}
+
+/* LETTER SECTION */
+
+.intro-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300vh;
+     background: transparent;
+}
+
+.letter{
+    height: 70vh;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.letter.visible{
+    opacity: 100;
+}
+
+.final-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 90vh;
+    width: 90vh;
+}
+
+#last-text{
+    color: white;
+    font-size: 4vh;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    font-family: "matt-b", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#last-text.visible{
+    opacity: 100;
+}
+
+/* HERO PARALLAX */
+#bg-view{
+    background: #D0D0CA;
+    background: linear-gradient(0deg, rgba(208, 208, 202, 1) 32%, rgba(112, 112, 112, 0.5) 100%);
+    width: 100%;
+    height: 200vh;
+    display: block;
+    opacity: 100%;
+}
+
+#bg-view svg{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+}
+
+
+#title{
+    
+    color: #F3C11B;
+    position: absolute;
+    top: 40%; /* vertically center */
+    left: 50%; /* horizontally center */
+    transform: translate(-50%, -70%);
+    font-size: 12vw;
+    font-family: "permanent-marker", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    
+
+}
+
+/* BACKGROUND-INTRO */
+
+.bgintro-container{
+    width: 100vw;
+    height: 2500vh;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.bgintro-container svg{
+    width: 200vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* START-END */
+
+.start-end{
+    position: absolute;
+    height: 200vh;
+    background-color: white;
+    z-index: -1;
+}
+
